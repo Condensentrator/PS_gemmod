@@ -10,6 +10,8 @@ namespace ItemForge.ContentPack
         {
             MelonLogger.Msg("[GemBasic] 宝石培育测试包已加载");
             InjectGemstoneLocalization();
+            InjectGemFeedbackLocalization();
+            GemBasic.GemQuality.EnsureRegistered();
         }
 
         // 游戏实际用的键是 "type_gemstone"，表名 "Mechanic"（不是 TYPE-STRING_*）。
@@ -54,11 +56,52 @@ namespace ItemForge.ContentPack
                     added++;
                 }
 
-                MelonLogger.Msg($"[GemBasic] Mechanic 表注入 type_gemstone：{added} 个语言，{missing} 个表未找到");
             }
             catch (Exception e)
             {
                 MelonLogger.Warning("[GemBasic] 注入 type_gemstone 失败: " + e);
+            }
+        }
+
+        private static void InjectGemFeedbackLocalization()
+        {
+            try
+            {
+                var db = LocalizationSettings.StringDatabase;
+                var locales = LocalizationSettings.AvailableLocales;
+                if (db == null || locales == null) return;
+
+                var list = locales.Locales;
+                if (list == null) return;
+
+                for (int i = 0; i < list.Count; i++)
+                {
+                    var locale = list[i];
+                    if (locale == null) continue;
+                    var table = db.GetTable("Dialogue", locale);
+                    if (table == null) continue;
+
+                    string code = locale.Identifier.Code ?? "";
+                    bool zh = code.StartsWith("zh", StringComparison.OrdinalIgnoreCase);
+
+                    if (table.GetEntry("gem_feedback_returning") == null)
+                        table.AddEntry("gem_feedback_returning",
+                            zh ? "你好，我昨天在你这里买过宝石。" : "Hello, I bought a gem from you yesterday.");
+
+                    if (table.GetEntry("gem_feedback_refund") == null)
+                        table.AddEntry("gem_feedback_refund",
+                            zh ? "我用光谱仪验过了，这标签和实际品质对不上。我要退款！"
+                               : "I checked it with a spectrometer. The label does not match the actual quality. I want a refund!");
+
+                    if (table.GetEntry("gem_feedback_refund_compensation") == null)
+                        table.AddEntry("gem_feedback_refund_compensation",
+                            zh ? "差了不止一个等级，我要退款，还要赔偿！"
+                               : "It is more than one grade off. I want a refund and compensation!");
+                }
+            }
+            catch (Exception e)
+            {
+                MelonLogger.Warning("[GemBasic] 注入宝石退款对话失败: " + e);
             }
         }
     }
