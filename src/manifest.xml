@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest formatVersion="1">
+  <id>gem_basic</id>
+  <name>宝石培育测试包</name>
+  <author>test</author>
+  <version>0.1.0</version>
+  <type>item-pack</type>
+  <runtime>ItemForgeRuntime</runtime>
+  <requiredRuntimeApi>20</requiredRuntimeApi>
+  <assembly>PSItemPack_GemBasic.dll</assembly>
+</manifest>

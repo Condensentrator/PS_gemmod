@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>PSItemPack_Demo</AssemblyName>
+    <RootNamespace>ItemForge.ContentPack</RootNamespace>
+    <PlatformTarget>x64</PlatformTarget>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- Suppress "copy local" so we do not ship MelonLoader next to the mod. -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <!-- Adjust if the game lives elsewhere. -->
+    <GameDir Condition="'$(GameDir)' == ''">D:\steam\steamapps\common\Probably Stolen Demo</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="MelonLoader">
+      <HintPath>$(GameDir)\MelonLoader\net6\MelonLoader.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(GameDir)\MelonLoader\net6\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>$(GameDir)\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- The item definitions. The resource name MUST be exactly ItemForge.items.json. -->
+    <EmbeddedResource Include="ItemForge.items.json">
+      <LogicalName>ItemForge.items.json</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manifest.xml">
+      <LogicalName>manifest.xml</LogicalName>
+    </EmbeddedResource>
+    <!-- Icons: each PNG must be named <ItemId>.png and lands as ItemForge.icons.<ItemId>.png. -->
+    <EmbeddedResource Include="icons\*.png">
+      <LogicalName>ItemForge.icons.%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

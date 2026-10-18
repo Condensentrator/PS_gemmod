@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Metadata for external tooling / the Item Manager UI. ItemForgeRuntime itself
+     does not read this file, but keep it descriptive. -->
+<manifest formatVersion="1">
+  <id>demo_pack</id>
+  <name>示例内容包</name>
+  <author>你的名字</author>
+  <version>1.0.0</version>
+  <type>item-pack</type>
+  <runtime>ItemForgeRuntime</runtime>
+  <requiredRuntimeApi>20</requiredRuntimeApi>
+  <assembly>PSItemPack_Demo.dll</assembly>
+</manifest>

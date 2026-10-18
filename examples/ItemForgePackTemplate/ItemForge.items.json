@@ -1,0 +1,64 @@
+{
+  "RequiredRuntimeApi": 20,
+  "GeneratorVersion": "1.0.0",
+  "BundleId": "demo_pack",
+  "BundleName": "示例内容包",
+  "Author": "你的名字",
+  "Items": [
+    {
+      "Id": "demo_berry",
+      "ChineseName": "示例浆果",
+      "EnglishName": "Demo Berry",
+      "Value": 20,
+      "ShortDescription": "一种普通的示例浆果。",
+      "FlavorText": "尝起来还行。",
+      "DirectoryKind": "Food",
+      "Types": [ "FOOD", "SEED" ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Tiny"
+    },
+    {
+      "Id": "demo_jam",
+      "ChineseName": "示例果酱",
+      "EnglishName": "Demo Jam",
+      "Value": 120,
+      "ShortDescription": "用示例浆果慢炖而成。",
+      "FlavorText": "甜得发腻。",
+      "DirectoryKind": "Food",
+      "Types": [ "FOOD", "PROCESSED_FOOD", "TREAT" ],
+      "ConsumableKind": "Food",
+      "Calories": 40,
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "demo_slow_cooker",
+      "ChineseName": "示例慢炖罐",
+      "EnglishName": "Demo Slow Cooker",
+      "Value": 800,
+      "ShortDescription": "放入浆果，过几天就能得到果酱。",
+      "FlavorText": "安静地冒着热气。",
+      "DirectoryKind": "Container",
+      "Types": [ "HOUSEHOLD_GOOD", "PROCESSING_MACHINE" ],
+      "AddContainerTag": true,
+      "GridWidth": 3,
+      "GridHeight": 3,
+      "SoundPreset": "SoftPlastic",
+      "ProcessingMachineEnabled": true,
+      "ProcessingMachineWidth": 6,
+      "ProcessingMachineHeight": 6,
+      "ProcessingMachineRecipes": [
+        {
+          "Name": "慢炖果酱",
+          "InputItemId": "demo_berry",
+          "OutputItemId": "demo_jam",
+          "DurationDays": 2,
+          "UseInputWeight": false,
+          "WeightRetentionPercent": 100
+        }
+      ]
+    }
+  ]
+}

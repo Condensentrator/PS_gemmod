@@ -1,0 +1,1233 @@
+{
+  "RequiredRuntimeApi": 20,
+  "GeneratorVersion": "0.8.0",
+  "BundleId": "gem_basic",
+  "BundleName": "宝石培育测试包",
+  "Author": "test",
+  "Items": [
+    {
+      "Id": "gem_core",
+      "ChineseName": "刚玉晶核",
+      "EnglishName": "Corundum Core",
+      "Value": 60,
+      "ShortDescription": "一次性晶核，长成哪种刚玉由培养液成分决定。",
+      "FlavorText": "没有固定颜色的晶种。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "MATERIAL"
+      ],
+      "AdditionalTags": [
+        "GEM_CORE",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Vial"
+    },
+    {
+      "Id": "gem_core_ruby",
+      "ChineseName": "红宝石晶核",
+      "EnglishName": "Ruby Core",
+      "Value": 80,
+      "ShortDescription": "一次性晶核，固定长成红宝石。",
+      "FlavorText": "小小的红色晶种，摸起来有点温。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "MATERIAL"
+      ],
+      "AdditionalTags": [
+        "GEM_CORE",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Vial"
+    },
+    {
+      "Id": "gem_ruby_cultured",
+      "ChineseName": "红宝石（小）",
+      "EnglishName": "Ruby (Small)",
+      "Value": 150,
+      "ShortDescription": "人工培育的红宝石，还在长大。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_ruby_cultured_m",
+      "ChineseName": "红宝石（中）",
+      "EnglishName": "Ruby (Medium)",
+      "Value": 400,
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_ruby_cultured_l",
+      "ChineseName": "红宝石（大）",
+      "EnglishName": "Ruby (Large)",
+      "Value": 800,
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_ruby_cultured_xl",
+      "ChineseName": "红宝石（巨）",
+      "EnglishName": "Ruby (Huge)",
+      "Value": 1500,
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_sapphire_cultured",
+      "ChineseName": "蓝宝石（小）",
+      "EnglishName": "Sapphire (Small)",
+      "Value": 180,
+      "ShortDescription": "从富矿物/化学培养液里长出的蓝宝石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_sapphire_cultured_m",
+      "ChineseName": "蓝宝石（中）",
+      "EnglishName": "Sapphire (Medium)",
+      "Value": 450,
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_sapphire_cultured_l",
+      "ChineseName": "蓝宝石（大）",
+      "EnglishName": "Sapphire (Large)",
+      "Value": 900,
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_sapphire_cultured_xl",
+      "ChineseName": "蓝宝石（巨）",
+      "EnglishName": "Sapphire (Huge)",
+      "Value": 1700,
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_emerald_cultured",
+      "ChineseName": "绿色蓝宝石（小）",
+      "EnglishName": "Green Sapphire (Small)",
+      "Value": 160,
+      "ShortDescription": "从富植物/有机培养液里长出的绿色蓝宝石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_emerald_cultured_m",
+      "ChineseName": "绿色蓝宝石（中）",
+      "EnglishName": "Green Sapphire (Medium)",
+      "Value": 420,
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_emerald_cultured_l",
+      "ChineseName": "绿色蓝宝石（大）",
+      "EnglishName": "Green Sapphire (Large)",
+      "Value": 850,
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_emerald_cultured_xl",
+      "ChineseName": "绿色蓝宝石（巨）",
+      "EnglishName": "Green Sapphire (Huge)",
+      "Value": 1600,
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_cultured",
+      "ChineseName": "刚玉（小）",
+      "EnglishName": "Corundum (Small)",
+      "Value": 160,
+      "ShortDescription": "人工培育的刚玉，颜色由培养液成分决定。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_cultured_m",
+      "ChineseName": "刚玉（中）",
+      "EnglishName": "Corundum (Medium)",
+      "Value": 420,
+      "ShortDescription": "人工培育的刚玉，颜色由培养液成分决定。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_cultured_l",
+      "ChineseName": "刚玉（大）",
+      "EnglishName": "Corundum (Large)",
+      "Value": 850,
+      "ShortDescription": "人工培育的刚玉，颜色由培养液成分决定。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_cultured_xl",
+      "ChineseName": "刚玉（巨）",
+      "EnglishName": "Corundum (Huge)",
+      "Value": 1600,
+      "ShortDescription": "人工培育的刚玉，颜色由培养液成分决定。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_core_beryl",
+      "ChineseName": "绿柱石晶核",
+      "EnglishName": "Beryl Core",
+      "Value": 90,
+      "ShortDescription": "一次性晶核，长成哪种绿柱石由培养液成分决定。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "MATERIAL"
+      ],
+      "AdditionalTags": [
+        "GEM_CORE",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Vial"
+    },
+    {
+      "Id": "gem_beryl_cultured",
+      "ChineseName": "绿柱石（小）",
+      "EnglishName": "Beryl (Small)",
+      "Value": 200,
+      "ShortDescription": "人工培育的绿柱石，颜色由培养液成分决定。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_cultured_m",
+      "ChineseName": "绿柱石（中）",
+      "EnglishName": "Beryl (Medium)",
+      "Value": 500,
+      "ShortDescription": "人工培育的绿柱石，颜色由培养液成分决定。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_cultured_l",
+      "ChineseName": "绿柱石（大）",
+      "EnglishName": "Beryl (Large)",
+      "Value": 1000,
+      "ShortDescription": "人工培育的绿柱石，颜色由培养液成分决定。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_cultured_xl",
+      "ChineseName": "绿柱石（巨）",
+      "EnglishName": "Beryl (Huge)",
+      "Value": 1900,
+      "ShortDescription": "人工培育的绿柱石，颜色由培养液成分决定。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_red_cultured",
+      "ChineseName": "红宝石（小）",
+      "EnglishName": "Ruby (Small)",
+      "Value": 160,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_red_cultured_m",
+      "ChineseName": "红宝石（中）",
+      "EnglishName": "Ruby (Medium)",
+      "Value": 420,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_red_cultured_l",
+      "ChineseName": "红宝石（大）",
+      "EnglishName": "Ruby (Large)",
+      "Value": 850,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_red_cultured_xl",
+      "ChineseName": "红宝石（巨）",
+      "EnglishName": "Ruby (Huge)",
+      "Value": 1600,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_blue_cultured",
+      "ChineseName": "蓝宝石（小）",
+      "EnglishName": "Sapphire (Small)",
+      "Value": 160,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_blue_cultured_m",
+      "ChineseName": "蓝宝石（中）",
+      "EnglishName": "Sapphire (Medium)",
+      "Value": 420,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_blue_cultured_l",
+      "ChineseName": "蓝宝石（大）",
+      "EnglishName": "Sapphire (Large)",
+      "Value": 850,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_blue_cultured_xl",
+      "ChineseName": "蓝宝石（巨）",
+      "EnglishName": "Sapphire (Huge)",
+      "Value": 1600,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_green_cultured",
+      "ChineseName": "绿色蓝宝石（小）",
+      "EnglishName": "Green Sapphire (Small)",
+      "Value": 160,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_green_cultured_m",
+      "ChineseName": "绿色蓝宝石（中）",
+      "EnglishName": "Green Sapphire (Medium)",
+      "Value": 420,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_green_cultured_l",
+      "ChineseName": "绿色蓝宝石（大）",
+      "EnglishName": "Green Sapphire (Large)",
+      "Value": 850,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_green_cultured_xl",
+      "ChineseName": "绿色蓝宝石（巨）",
+      "EnglishName": "Green Sapphire (Huge)",
+      "Value": 1600,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_yellow_cultured",
+      "ChineseName": "黄色蓝宝石（小）",
+      "EnglishName": "Yellow Sapphire (Small)",
+      "Value": 160,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_yellow_cultured_m",
+      "ChineseName": "黄色蓝宝石（中）",
+      "EnglishName": "Yellow Sapphire (Medium)",
+      "Value": 420,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_yellow_cultured_l",
+      "ChineseName": "黄色蓝宝石（大）",
+      "EnglishName": "Yellow Sapphire (Large)",
+      "Value": 850,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_yellow_cultured_xl",
+      "ChineseName": "黄色蓝宝石（巨）",
+      "EnglishName": "Yellow Sapphire (Huge)",
+      "Value": 1600,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_pink_cultured",
+      "ChineseName": "粉色蓝宝石（小）",
+      "EnglishName": "Pink Sapphire (Small)",
+      "Value": 160,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_pink_cultured_m",
+      "ChineseName": "粉色蓝宝石（中）",
+      "EnglishName": "Pink Sapphire (Medium)",
+      "Value": 420,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_pink_cultured_l",
+      "ChineseName": "粉色蓝宝石（大）",
+      "EnglishName": "Pink Sapphire (Large)",
+      "Value": 850,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_corundum_pink_cultured_xl",
+      "ChineseName": "粉色蓝宝石（巨）",
+      "EnglishName": "Pink Sapphire (Huge)",
+      "Value": 1600,
+      "ShortDescription": "人工培育的刚玉。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_emerald_cultured",
+      "ChineseName": "祖母绿（小）",
+      "EnglishName": "Emerald (Small)",
+      "Value": 200,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_emerald_cultured_m",
+      "ChineseName": "祖母绿（中）",
+      "EnglishName": "Emerald (Medium)",
+      "Value": 500,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_emerald_cultured_l",
+      "ChineseName": "祖母绿（大）",
+      "EnglishName": "Emerald (Large)",
+      "Value": 1000,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_emerald_cultured_xl",
+      "ChineseName": "祖母绿（巨）",
+      "EnglishName": "Emerald (Huge)",
+      "Value": 1900,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_aqua_cultured",
+      "ChineseName": "海蓝宝石（小）",
+      "EnglishName": "Aquamarine (Small)",
+      "Value": 200,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_aqua_cultured_m",
+      "ChineseName": "海蓝宝石（中）",
+      "EnglishName": "Aquamarine (Medium)",
+      "Value": 500,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_aqua_cultured_l",
+      "ChineseName": "海蓝宝石（大）",
+      "EnglishName": "Aquamarine (Large)",
+      "Value": 1000,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_aqua_cultured_xl",
+      "ChineseName": "海蓝宝石（巨）",
+      "EnglishName": "Aquamarine (Huge)",
+      "Value": 1900,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_morganite_cultured",
+      "ChineseName": "摩根石（小）",
+      "EnglishName": "Morganite (Small)",
+      "Value": 200,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_morganite_cultured_m",
+      "ChineseName": "摩根石（中）",
+      "EnglishName": "Morganite (Medium)",
+      "Value": 500,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_morganite_cultured_l",
+      "ChineseName": "摩根石（大）",
+      "EnglishName": "Morganite (Large)",
+      "Value": 1000,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_morganite_cultured_xl",
+      "ChineseName": "摩根石（巨）",
+      "EnglishName": "Morganite (Huge)",
+      "Value": 1900,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_heliodor_cultured",
+      "ChineseName": "金绿柱石（小）",
+      "EnglishName": "Heliodor (Small)",
+      "Value": 200,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_heliodor_cultured_m",
+      "ChineseName": "金绿柱石（中）",
+      "EnglishName": "Heliodor (Medium)",
+      "Value": 500,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_heliodor_cultured_l",
+      "ChineseName": "金绿柱石（大）",
+      "EnglishName": "Heliodor (Large)",
+      "Value": 1000,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_heliodor_cultured_xl",
+      "ChineseName": "金绿柱石（巨）",
+      "EnglishName": "Heliodor (Huge)",
+      "Value": 1900,
+      "ShortDescription": "人工培育的绿柱石。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_core_quartz",
+      "ChineseName": "石英晶核",
+      "EnglishName": "Quartz Core",
+      "Value": 70,
+      "ShortDescription": "一次性晶核，固定长成紫水晶。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "MATERIAL"
+      ],
+      "AdditionalTags": [
+        "GEM_CORE",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Vial"
+    },
+    {
+      "Id": "gem_quartz_amethyst_cultured",
+      "ChineseName": "紫水晶（小）",
+      "EnglishName": "Amethyst (Small)",
+      "Value": 160,
+      "ShortDescription": "人工培育的石英。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_quartz_amethyst_cultured_m",
+      "ChineseName": "紫水晶（中）",
+      "EnglishName": "Amethyst (Medium)",
+      "Value": 420,
+      "ShortDescription": "人工培育的石英。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_quartz_amethyst_cultured_l",
+      "ChineseName": "紫水晶（大）",
+      "EnglishName": "Amethyst (Large)",
+      "Value": 850,
+      "ShortDescription": "人工培育的石英。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_quartz_amethyst_cultured_xl",
+      "ChineseName": "紫水晶（巨）",
+      "EnglishName": "Amethyst (Huge)",
+      "Value": 1600,
+      "ShortDescription": "人工培育的石英。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    },
+    {
+      "Id": "gem_beryl_aqua_showcase",
+      "ChineseName": "海蓝宝石（成品展示）",
+      "EnglishName": "Aquamarine (Showcase)",
+      "Value": 1200,
+      "ShortDescription": "成品展示用。",
+      "DirectoryKind": "Misc",
+      "Types": [
+        "LUXURY_ITEM",
+        "GEMSTONE"
+      ],
+      "AdditionalTags": [
+        "GEM_CULTURED",
+        "GEM_ITEM"
+      ],
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "SoundPreset": "Glass"
+    }
+  ]
+}
